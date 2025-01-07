@@ -1,0 +1,8 @@
+\ Model gurobi_model_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+  0 w_79_0_k_od
+Subject To
+Bounds
+ 41 <= w_79_0_k_od <= 38.85
+End

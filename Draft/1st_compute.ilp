@@ -1,0 +1,72 @@
+\ Model First Echelon Model_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ 1st_con_start_equ_return-0: x_0_1_0 + x_0_2_0 - x_1_30_0 - x_2_30_0 = 0
+ 1st_con_start_equ_return-1: x_0_1_1 + x_0_2_1 - x_1_30_1 - x_2_30_1 = 0
+ 1st_con_start_equ_return-2: x_0_1_2 + x_0_2_2 - x_1_30_2 - x_2_30_2 = 0
+ 1st_con_start_equ_return-3: x_0_1_3 + x_0_2_3 - x_1_30_3 - x_2_30_3 = 0
+ 1st_con_start_equ_return-4: x_0_1_4 + x_0_2_4 - x_1_30_4 - x_2_30_4 = 0
+ 1st_con_start_equ_return-5: x_0_1_5 + x_0_2_5 - x_1_30_5 - x_2_30_5 = 0
+ 1st_con_flow_balance-1_0: x_0_1_0 - x_1_30_0 - x_1_2_0 + x_2_1_0 <= 0
+ 1st_con_flow_balance-1_1: x_0_1_1 - x_1_30_1 - x_1_2_1 + x_2_1_1 <= 0
+ 1st_con_flow_balance-1_2: x_0_1_2 - x_1_30_2 - x_1_2_2 + x_2_1_2 <= 0
+ 1st_con_flow_balance-1_3: x_0_1_3 - x_1_30_3 - x_1_2_3 + x_2_1_3 <= 0
+ 1st_con_flow_balance-1_4: x_0_1_4 - x_1_30_4 - x_1_2_4 + x_2_1_4 <= 0
+ 1st_con_flow_balance-1_5: x_0_1_5 - x_1_30_5 - x_1_2_5 + x_2_1_5 <= 0
+ 1st-con_sate_visit_2: x_2_30_0 + x_2_30_1 + x_2_30_2 + x_2_30_3 + x_2_30_4
+   + x_2_30_5 + x_2_1_0 + x_2_1_1 + x_2_1_2 + x_2_1_3 + x_2_1_4 + x_2_1_5
+   >= 1
+ 1st-time_window-0_2_0: 15000 x_0_2_0 + tau_0_0 - var_zeta_2_0 <= 14902.93
+ 1st-time_window-1_2_0: 15000 x_1_2_0 + tau_1_0 - var_zeta_2_0 <= 14878.74
+ 1st-ser_after_arr-2_0: var_zeta_2_0 - tau_2_0 <= 0
+ 1st-time_window-0_2_1: 15000 x_0_2_1 + tau_0_1 - var_zeta_2_1 <= 14902.93
+ 1st-ser_after_arr-2_1: var_zeta_2_1 - tau_2_1 <= 0
+ 1st-time_window-0_2_2: 15000 x_0_2_2 + tau_0_2 - var_zeta_2_2 <= 14902.93
+ 1st-time_window-1_2_2: 15000 x_1_2_2 + tau_1_2 - var_zeta_2_2 <= 14878.74
+ 1st-ser_after_arr-2_2: var_zeta_2_2 - tau_2_2 <= 0
+ 1st-time_window-0_2_3: 15000 x_0_2_3 + tau_0_3 - var_zeta_2_3 <= 14902.93
+ 1st-time_window-1_2_3: 15000 x_1_2_3 + tau_1_3 - var_zeta_2_3 <= 14878.74
+ 1st-ser_after_arr-2_3: var_zeta_2_3 - tau_2_3 <= 0
+ 1st-time_window-0_2_4: 15000 x_0_2_4 + tau_0_4 - var_zeta_2_4 <= 14902.93
+ 1st-ser_after_arr-2_4: var_zeta_2_4 - tau_2_4 <= 0
+ 1st-time_window-0_2_5: 15000 x_0_2_5 + tau_0_5 - var_zeta_2_5 <= 14902.93
+ 1st-time_window-1_2_5: 15000 x_1_2_5 + tau_1_5 - var_zeta_2_5 <= 14878.74
+ 1st-ser_after_arr-2_5: var_zeta_2_5 - tau_2_5 <= 0
+ 1st-3-con_capacity-0_1_1: 24700 x_0_1_1 + w_0_1 - w_1_1 <= 15000
+ 1st-3-con_capacity-0_1_4: 24700 x_0_1_4 + w_0_4 - w_1_4 <= 15000
+ 1st-3-con_capacity-1_2_1: 27800 x_1_2_1 + w_1_1 - w_2_1 <= 15000
+ 1st-3-con_capacity-1_2_4: 27800 x_1_2_4 + w_1_4 - w_2_4 <= 15000
+ 1st-3-con_capacity-2_1_1: 24700 x_2_1_1 - w_1_1 + w_2_1 <= 15000
+ 1st-3-con_capacity-2_1_4: 24700 x_2_1_4 - w_1_4 + w_2_4 <= 15000
+ 1st-4-con_time_window_2-2_0: tau_2_0 <= 62.99338880416704
+ 1st-4-con_time_window_2-2_1: tau_2_1 <= 62.99338880416704
+ 1st-4-con_time_window_2-2_2: tau_2_2 <= 62.99338880416704
+ 1st-4-con_time_window_2-2_3: tau_2_3 <= 62.99338880416704
+ 1st-4-con_time_window_2-2_4: tau_2_4 <= 62.99338880416704
+ 1st-4-con_time_window_2-2_5: tau_2_5 <= 62.99338880416704
+Bounds
+ w_1_1 free
+ w_1_4 free
+ var_zeta_2_0 free
+ tau_2_0 free
+ -infinity <= w_2_1 <= 15000
+ var_zeta_2_1 free
+ tau_2_1 free
+ var_zeta_2_2 free
+ tau_2_2 free
+ var_zeta_2_3 free
+ tau_2_3 free
+ -infinity <= w_2_4 <= 15000
+ var_zeta_2_4 free
+ tau_2_4 free
+ var_zeta_2_5 free
+ tau_2_5 free
+Binaries
+ x_0_1_0 x_0_1_1 x_0_1_2 x_0_1_3 x_0_1_4 x_0_1_5 x_0_2_0 x_0_2_1 x_0_2_2
+ x_0_2_3 x_0_2_4 x_0_2_5 x_1_30_0 x_1_30_1 x_1_30_2 x_1_30_3 x_1_30_4
+ x_1_30_5 x_1_2_0 x_1_2_1 x_1_2_2 x_1_2_3 x_1_2_4 x_1_2_5 x_2_30_0 x_2_30_1
+ x_2_30_2 x_2_30_3 x_2_30_4 x_2_30_5 x_2_1_0 x_2_1_1 x_2_1_2 x_2_1_3
+ x_2_1_4 x_2_1_5
+End

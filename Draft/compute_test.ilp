@@ -1,0 +1,109 @@
+\ Model gurobi_model_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ 2nd_customer_visit-19: y_2_19_0 + y_2_19_1 + y_2_19_2 + y_2_19_3
+   + y_2_19_4 + y_2_19_5 + y_2_19_6 + y_2_19_7 + y_2_19_8 + y_2_19_9
+   + y_2_19_10 + y_2_19_11 + y_2_19_12 + y_2_19_13 + y_2_19_14 + y_2_19_15
+   + y_2_19_16 + y_2_19_17 + y_2_19_18 + y_2_19_19 + y_2_19_20 + y_2_19_21
+   + y_2_19_22 = 1
+ 2nd-con_time_window-2_19_0: 2000 y_2_19_0 + tau_2_0_k2 - var_zeta_19_0_k2
+   <= 1941.58
+ 2nd-con_time_window-2_19_1: 2000 y_2_19_1 + tau_2_1_k2 - var_zeta_19_1_k2
+   <= 1941.58
+ 2nd-con_time_window-2_19_2: 2000 y_2_19_2 + tau_2_2_k2 - var_zeta_19_2_k2
+   <= 1941.58
+ 2nd-con_time_window-2_19_3: 2000 y_2_19_3 + tau_2_3_k2 - var_zeta_19_3_k2
+   <= 1941.58
+ 2nd-con_time_window-2_19_4: 2000 y_2_19_4 + tau_2_4_k2 - var_zeta_19_4_k2
+   <= 1941.58
+ 2nd-con_time_window-2_19_5: 2000 y_2_19_5 + tau_2_5_k2 - var_zeta_19_5_k2
+   <= 1941.58
+ 2nd-con_time_window-2_19_6: 2000 y_2_19_6 + tau_2_6_k2 - var_zeta_19_6_k2
+   <= 1941.58
+ 2nd-con_time_window-2_19_7: 2000 y_2_19_7 + tau_2_7_k2 - var_zeta_19_7_k2
+   <= 1941.58
+ 2nd-con_time_window-2_19_8: 2000 y_2_19_8 + tau_2_8_k2 - var_zeta_19_8_k2
+   <= 1941.58
+ 2nd-con_time_window-2_19_9: 2000 y_2_19_9 + tau_2_9_k2 - var_zeta_19_9_k2
+   <= 1941.58
+ 2nd-con_time_window-2_19_10: 2000 y_2_19_10 + tau_2_10_k2
+   - var_zeta_19_10_k2 <= 1941.58
+ 2nd-con_time_window-2_19_11: 2000 y_2_19_11 + tau_2_11_k2
+   - var_zeta_19_11_k2 <= 1941.58
+ 2nd-con_time_window-2_19_12: 2000 y_2_19_12 + tau_2_12_k2
+   - var_zeta_19_12_k2 <= 1941.58
+ 2nd-con_time_window-2_19_13: 2000 y_2_19_13 + tau_2_13_k2
+   - var_zeta_19_13_k2 <= 1941.58
+ 2nd-con_time_window-2_19_14: 2000 y_2_19_14 + tau_2_14_k2
+   - var_zeta_19_14_k2 <= 1941.58
+ 2nd-con_time_window-2_19_15: 2000 y_2_19_15 + tau_2_15_k2
+   - var_zeta_19_15_k2 <= 1941.58
+ 2nd-con_time_window-2_19_16: 2000 y_2_19_16 + tau_2_16_k2
+   - var_zeta_19_16_k2 <= 1941.58
+ 2nd-con_time_window-2_19_17: 2000 y_2_19_17 + tau_2_17_k2
+   - var_zeta_19_17_k2 <= 1941.58
+ 2nd-con_time_window-2_19_18: 2000 y_2_19_18 + tau_2_18_k2
+   - var_zeta_19_18_k2 <= 1941.58
+ 2nd-con_time_window-2_19_19: 2000 y_2_19_19 + tau_2_19_k2
+   - var_zeta_19_19_k2 <= 1941.58
+ 2nd-con_time_window-2_19_20: 2000 y_2_19_20 + tau_2_20_k2
+   - var_zeta_19_20_k2 <= 1941.58
+ 2nd-con_time_window-2_19_21: 2000 y_2_19_21 + tau_2_21_k2
+   - var_zeta_19_21_k2 <= 1941.58
+ 2nd-con_time_window-2_19_22: 2000 y_2_19_22 + tau_2_22_k2
+   - var_zeta_19_22_k2 <= 1941.58
+Bounds
+ tau_2_0_k2 >= 151.64
+ tau_2_1_k2 >= 151.64
+ tau_2_2_k2 >= 151.64
+ tau_2_3_k2 >= 151.64
+ tau_2_4_k2 >= 151.64
+ tau_2_5_k2 >= 151.64
+ tau_2_6_k2 >= 151.64
+ tau_2_7_k2 >= 151.64
+ tau_2_8_k2 >= 151.64
+ tau_2_9_k2 >= 151.64
+ tau_2_10_k2 >= 151.64
+ tau_2_11_k2 >= 151.64
+ tau_2_12_k2 >= 151.64
+ tau_2_13_k2 >= 151.64
+ tau_2_14_k2 >= 151.64
+ tau_2_15_k2 >= 151.64
+ tau_2_16_k2 >= 151.64
+ tau_2_17_k2 >= 151.64
+ tau_2_18_k2 >= 151.64
+ tau_2_19_k2 >= 151.64
+ tau_2_20_k2 >= 151.64
+ tau_2_21_k2 >= 151.64
+ tau_2_22_k2 >= 151.64
+ -infinity <= var_zeta_19_0_k2 <= 160
+ -infinity <= var_zeta_19_1_k2 <= 160
+ -infinity <= var_zeta_19_2_k2 <= 160
+ -infinity <= var_zeta_19_3_k2 <= 160
+ -infinity <= var_zeta_19_4_k2 <= 160
+ -infinity <= var_zeta_19_5_k2 <= 160
+ -infinity <= var_zeta_19_6_k2 <= 160
+ -infinity <= var_zeta_19_7_k2 <= 160
+ -infinity <= var_zeta_19_8_k2 <= 160
+ -infinity <= var_zeta_19_9_k2 <= 160
+ -infinity <= var_zeta_19_10_k2 <= 160
+ -infinity <= var_zeta_19_11_k2 <= 160
+ -infinity <= var_zeta_19_12_k2 <= 160
+ -infinity <= var_zeta_19_13_k2 <= 160
+ -infinity <= var_zeta_19_14_k2 <= 160
+ -infinity <= var_zeta_19_15_k2 <= 160
+ -infinity <= var_zeta_19_16_k2 <= 160
+ -infinity <= var_zeta_19_17_k2 <= 160
+ -infinity <= var_zeta_19_18_k2 <= 160
+ -infinity <= var_zeta_19_19_k2 <= 160
+ -infinity <= var_zeta_19_20_k2 <= 160
+ -infinity <= var_zeta_19_21_k2 <= 160
+ -infinity <= var_zeta_19_22_k2 <= 160
+Binaries
+ y_2_19_0 y_2_19_1 y_2_19_2 y_2_19_3 y_2_19_4 y_2_19_5 y_2_19_6 y_2_19_7
+ y_2_19_8 y_2_19_9 y_2_19_10 y_2_19_11 y_2_19_12 y_2_19_13 y_2_19_14
+ y_2_19_15 y_2_19_16 y_2_19_17 y_2_19_18 y_2_19_19 y_2_19_20 y_2_19_21
+ y_2_19_22
+End
