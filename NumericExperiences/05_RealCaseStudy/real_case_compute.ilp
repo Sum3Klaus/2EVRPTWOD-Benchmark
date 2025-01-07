@@ -1,0 +1,134 @@
+\ Model First Echelon Model_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ 1st-3-con_capacity_service_-2_0: 25967 x_0_2_0 + 25967 x_1_2_0
+   + 25967 x_3_2_0 + 25967 x_4_2_0 - w_2_0 >= 0
+ 1st-3-con_capacity_service_-2_1: 25967 x_0_2_1 + 25967 x_1_2_1
+   + 25967 x_3_2_1 + 25967 x_4_2_1 - w_2_1 >= 0
+ 1st-3-con_capacity_service_-2_2: 25967 x_0_2_2 + 25967 x_1_2_2
+   + 25967 x_3_2_2 + 25967 x_4_2_2 - w_2_2 >= 0
+ 1st-3-con_capacity_service_-2_3: 25967 x_0_2_3 + 25967 x_1_2_3
+   + 25967 x_3_2_3 + 25967 x_4_2_3 - w_2_3 >= 0
+ 1st-3-con_capacity_service_-2_4: 25967 x_0_2_4 + 25967 x_1_2_4
+   + 25967 x_3_2_4 + 25967 x_4_2_4 - w_2_4 >= 0
+ 1st-3-con_capacity_service_-2_5: 25967 x_0_2_5 + 25967 x_1_2_5
+   + 25967 x_3_2_5 + 25967 x_4_2_5 - w_2_5 >= 0
+ 1st-3-con_capacity_service_-2_6: 25967 x_0_2_6 + 25967 x_1_2_6
+   + 25967 x_3_2_6 + 25967 x_4_2_6 - w_2_6 >= 0
+ 1st-3-con_capacity_service_-2_7: 25967 x_0_2_7 + 25967 x_1_2_7
+   + 25967 x_3_2_7 + 25967 x_4_2_7 - w_2_7 >= 0
+ 1st-3-con_capacity_sate-2: w_2_0 + w_2_1 + w_2_2 + w_2_3 + w_2_4 + w_2_5
+   + w_2_6 + w_2_7 = 5310
+ 1st-4-con_time_window_3-0_2_0: 900000 x_0_2_0 + tau_0_0 - var_zeta_2_0
+   <= 899913.4768180826
+ 1st-4-con_time_window_3-1_2_0: 900000 x_1_2_0 + tau_1_0 - var_zeta_2_0
+   <= 899924.1227756445
+ 1st-4-con_time_window_0-2_0: var_zeta_2_0 - tau_2_0 <= 0
+ 1st-4-con_time_window_2-2_0: tau_2_0 <= 64.27867963624348
+ 1st-4-con_time_window_3-3_2_0: 900000 x_3_2_0 - var_zeta_2_0 + tau_3_0
+   <= 899932.0771376513
+ 1st-4-con_time_window_3-4_2_0: 900000 x_4_2_0 - var_zeta_2_0 + tau_4_0
+   <= 899933.4649441753
+ 1st-4-con_time_window_3-0_2_1: 900000 x_0_2_1 + tau_0_1 - var_zeta_2_1
+   <= 899913.4768180826
+ 1st-4-con_time_window_3-1_2_1: 900000 x_1_2_1 + tau_1_1 - var_zeta_2_1
+   <= 899924.1227756445
+ 1st-4-con_time_window_0-2_1: var_zeta_2_1 - tau_2_1 <= 0
+ 1st-4-con_time_window_2-2_1: tau_2_1 <= 64.27867963624348
+ 1st-4-con_time_window_3-3_2_1: 900000 x_3_2_1 - var_zeta_2_1 + tau_3_1
+   <= 899932.0771376513
+ 1st-4-con_time_window_3-4_2_1: 900000 x_4_2_1 - var_zeta_2_1 + tau_4_1
+   <= 899933.4649441753
+ 1st-4-con_time_window_3-0_2_2: 900000 x_0_2_2 + tau_0_2 - var_zeta_2_2
+   <= 899913.4768180826
+ 1st-4-con_time_window_3-1_2_2: 900000 x_1_2_2 + tau_1_2 - var_zeta_2_2
+   <= 899924.1227756445
+ 1st-4-con_time_window_0-2_2: var_zeta_2_2 - tau_2_2 <= 0
+ 1st-4-con_time_window_2-2_2: tau_2_2 <= 64.27867963624348
+ 1st-4-con_time_window_3-3_2_2: 900000 x_3_2_2 - var_zeta_2_2 + tau_3_2
+   <= 899932.0771376513
+ 1st-4-con_time_window_3-4_2_2: 900000 x_4_2_2 - var_zeta_2_2 + tau_4_2
+   <= 899933.4649441753
+ 1st-4-con_time_window_3-0_2_3: 900000 x_0_2_3 + tau_0_3 - var_zeta_2_3
+   <= 899913.4768180826
+ 1st-4-con_time_window_3-1_2_3: 900000 x_1_2_3 + tau_1_3 - var_zeta_2_3
+   <= 899924.1227756445
+ 1st-4-con_time_window_0-2_3: var_zeta_2_3 - tau_2_3 <= 0
+ 1st-4-con_time_window_2-2_3: tau_2_3 <= 64.27867963624348
+ 1st-4-con_time_window_3-3_2_3: 900000 x_3_2_3 - var_zeta_2_3 + tau_3_3
+   <= 899932.0771376513
+ 1st-4-con_time_window_3-4_2_3: 900000 x_4_2_3 - var_zeta_2_3 + tau_4_3
+   <= 899933.4649441753
+ 1st-4-con_time_window_3-0_2_4: 900000 x_0_2_4 + tau_0_4 - var_zeta_2_4
+   <= 899913.4768180826
+ 1st-4-con_time_window_3-1_2_4: 900000 x_1_2_4 + tau_1_4 - var_zeta_2_4
+   <= 899924.1227756445
+ 1st-4-con_time_window_0-2_4: var_zeta_2_4 - tau_2_4 <= 0
+ 1st-4-con_time_window_2-2_4: tau_2_4 <= 64.27867963624348
+ 1st-4-con_time_window_3-3_2_4: 900000 x_3_2_4 - var_zeta_2_4 + tau_3_4
+   <= 899932.0771376513
+ 1st-4-con_time_window_3-4_2_4: 900000 x_4_2_4 - var_zeta_2_4 + tau_4_4
+   <= 899933.4649441753
+ 1st-4-con_time_window_3-0_2_5: 900000 x_0_2_5 + tau_0_5 - var_zeta_2_5
+   <= 899913.4768180826
+ 1st-4-con_time_window_3-1_2_5: 900000 x_1_2_5 + tau_1_5 - var_zeta_2_5
+   <= 899924.1227756445
+ 1st-4-con_time_window_0-2_5: var_zeta_2_5 - tau_2_5 <= 0
+ 1st-4-con_time_window_2-2_5: tau_2_5 <= 64.27867963624348
+ 1st-4-con_time_window_3-3_2_5: 900000 x_3_2_5 - var_zeta_2_5 + tau_3_5
+   <= 899932.0771376513
+ 1st-4-con_time_window_3-4_2_5: 900000 x_4_2_5 - var_zeta_2_5 + tau_4_5
+   <= 899933.4649441753
+ 1st-4-con_time_window_3-0_2_6: 900000 x_0_2_6 + tau_0_6 - var_zeta_2_6
+   <= 899913.4768180826
+ 1st-4-con_time_window_3-1_2_6: 900000 x_1_2_6 + tau_1_6 - var_zeta_2_6
+   <= 899924.1227756445
+ 1st-4-con_time_window_0-2_6: var_zeta_2_6 - tau_2_6 <= 0
+ 1st-4-con_time_window_2-2_6: tau_2_6 <= 64.27867963624348
+ 1st-4-con_time_window_3-3_2_6: 900000 x_3_2_6 - var_zeta_2_6 + tau_3_6
+   <= 899932.0771376513
+ 1st-4-con_time_window_3-4_2_6: 900000 x_4_2_6 - var_zeta_2_6 + tau_4_6
+   <= 899933.4649441753
+ 1st-4-con_time_window_3-0_2_7: 900000 x_0_2_7 + tau_0_7 - var_zeta_2_7
+   <= 899913.4768180826
+ 1st-4-con_time_window_3-1_2_7: 900000 x_1_2_7 + tau_1_7 - var_zeta_2_7
+   <= 899924.1227756445
+ 1st-4-con_time_window_0-2_7: var_zeta_2_7 - tau_2_7 <= 0
+ 1st-4-con_time_window_2-2_7: tau_2_7 <= 64.27867963624348
+ 1st-4-con_time_window_3-3_2_7: 900000 x_3_2_7 - var_zeta_2_7 + tau_3_7
+   <= 899932.0771376513
+ 1st-4-con_time_window_3-4_2_7: 900000 x_4_2_7 - var_zeta_2_7 + tau_4_7
+   <= 899933.4649441753
+Bounds
+ w_2_0 free
+ var_zeta_2_0 free
+ tau_2_0 free
+ w_2_1 free
+ var_zeta_2_1 free
+ tau_2_1 free
+ w_2_2 free
+ var_zeta_2_2 free
+ tau_2_2 free
+ w_2_3 free
+ var_zeta_2_3 free
+ tau_2_3 free
+ w_2_4 free
+ var_zeta_2_4 free
+ tau_2_4 free
+ w_2_5 free
+ var_zeta_2_5 free
+ tau_2_5 free
+ w_2_6 free
+ var_zeta_2_6 free
+ tau_2_6 free
+ w_2_7 free
+ var_zeta_2_7 free
+ tau_2_7 free
+Binaries
+ x_0_2_0 x_0_2_1 x_0_2_2 x_0_2_3 x_0_2_4 x_0_2_5 x_0_2_6 x_0_2_7 x_1_2_0
+ x_1_2_1 x_1_2_2 x_1_2_3 x_1_2_4 x_1_2_5 x_1_2_6 x_1_2_7 x_3_2_0 x_3_2_1
+ x_3_2_2 x_3_2_3 x_3_2_4 x_3_2_5 x_3_2_6 x_3_2_7 x_4_2_0 x_4_2_1 x_4_2_2
+ x_4_2_3 x_4_2_4 x_4_2_5 x_4_2_6 x_4_2_7
+End
